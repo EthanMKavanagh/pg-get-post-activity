@@ -1,0 +1,28 @@
+{
+  "name": "pg-get-post-activity",
+  "version": "1.0.0",
+  "description": "``` ,________,         .------,          .------,         .------. |________|       ,'_____,'|        ,'_____,'|        (        ) |        |       |      | |        | ____ | |        |~------~| |        |       |      | |        | ____ | |        |~------~| |        |       |      | ;        | ____ | ;        |~------~| |________|       |______|'         |______|'         `.______.'  HTML/CSS          jQuery        Node / Express      PostgreSQL ``` Let's build a basic bookstore!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kavy-1/pg-get-post-activity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kavy-1/pg-get-post-activity/issues"
+  },
+  "homepage": "https://github.com/Kavy-1/pg-get-post-activity#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "npm": "^6.14.8",
+    "pg": "^8.3.3"
+  }
+}
