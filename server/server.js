@@ -16,6 +16,16 @@ const pool = new Pool( {
     idleTimeoutMillis: 20000
 } ); // end pool
 
+app.get( '/books', ( req, res ) => {
+    const queryString = 'SELECT * FROM "books";';
+    pool.query( queryString ).then( ( results ) => {
+        res.send( results.rows );
+    } ).catch( ( err ) => {
+        console.log( err );
+        res.sendStatus( 500 );
+    } ); // end query
+} ); // end /books GET
+
 app.listen( PORT, () => {
     console.log( 'Listening on', PORT );
-} );
+} ); // end listen
