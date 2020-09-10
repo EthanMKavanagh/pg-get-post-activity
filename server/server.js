@@ -27,7 +27,7 @@ app.get( '/books', ( req, res ) => {
 } ); // end /books GET
 
 app.post( '/books', ( req, res ) => {
-    const queryString = `INSERT INTO "books" ( title, author, published ) VALUES ( $1, $2, $3 )`;
+    const queryString = `INSERT INTO "books" ( title, author, published ) VALUES ( $1, $2, $3 );`;
     pool.query( queryString, [req.body.title, req.body.author, req.body.published ] ).then( ( results ) => {
         res.sendStatus( 201 );
     } ).catch( ( err ) => {
