@@ -18,6 +18,12 @@ function onAddBooks(){
     } ).then( function( response ){
         console.log( 'Got a response from POST:', response );
         onRefreshBooks();
+
+        // Clear Inputs!!!
+        $( '#titleIn' ).val( '' );
+        $( '#authorIn' ).val( '' );
+        $( '#publishedIn' ).val( '' );
+
     } ).catch( function( err ){
         alert( 'Error in client POST' );
         console.log( err );
